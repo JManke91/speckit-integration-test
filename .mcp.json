@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sdlc-speckit": {
+      "command": "npx",
+      "args": ["-y", "@dswinscoe/sdlc-speckit-mcp"],
+      "env": {
+        "SPECKIT_EXPORTS_SAS_URL": "${SPECKIT_EXPORTS_SAS_URL}",
+        "SDLC_PROJECT_NAME": "lisa_test"
+      }
+    }
+  }
+}
