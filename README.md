@@ -13,6 +13,16 @@ read-SAS URL. Only reviewed, merged wiki state is ever served.
 
 ## One-time developer setup
 
+**Fast path:** run the setup script from the llm-wiki repo — it does everything below in
+one go (npm auth from your `gh` login, SAS URL into your shell profile, verification):
+
+```bash
+# in a clone of dswinscoe/llm-wiki:
+scripts/setup-speckit-consumer.sh --sas-url '<from team vault>'   # or: --mint-sas (Azure CLI access)
+```
+
+Manual steps, if you prefer:
+
 1. **GitHub Packages auth** (the package lives in a private repo) — `~/.npmrc`:
 
    ```
